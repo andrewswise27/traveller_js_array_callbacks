@@ -13,8 +13,8 @@ Traveller.prototype.getJourneyEndLocations = function () {
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
-  const hghg = [];
-  mode = this.journeys.map(journey => {if (journey.transport === [transport]) {
+  let hghg = [];
+  mode = this.journeys.map(journey => {if (journey.transport === transport) {
     hghg.push(journey)
   } } );
   return hghg;
